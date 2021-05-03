@@ -1,6 +1,7 @@
 class MyCar
 
-  attr_reader :year, :color, :model, :speed
+  attr_reader :year, :model, :speed
+  attr_accessor :color
 
   def initialize(year, color, model)
     @year = year
@@ -28,4 +29,9 @@ class MyCar
       end
     end
   end
+
+  def spray_color(new_color)
+    self.color = new_color
+  end
+  
 end
